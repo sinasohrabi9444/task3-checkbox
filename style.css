@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+.checkbox-2 {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-2-lable {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: flex;
+  padding: 2px;
+  border-radius: 22px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.checkbox-2:checked + .checkbox-2-lable .circle {
+  transform: translateX(25px);
+}
+body.dark {
+  background-color: #1d2330;
+  color: #fff;
+}
